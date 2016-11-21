@@ -15,11 +15,15 @@ npm install jquery-metadata
 ```
 
 2.第二种用法是在某个属性中添加数据
-···javascript
+
+
+```html
 <li data="{some:'random', json: 'data'}">...</li>
-···
+```
 
 3.第三种方法是使用script标签来附加数据
-···javascript
+
+
+```html
 <li><script type="data">{some:"json",data:true}</script> ...</li>
-···
+```

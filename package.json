@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/zhangzju/awesome-jquery-plugins#readme",
   "dependencies": {
-    "jquery": "^3.1.1"
+    "jquery": "^3.1.1",
+    "jquery-modal": "^0.8.0",
+    "jquery_metadata": "^2.0.0",
+    "normalize.css": "^5.0.0"
   }
 }

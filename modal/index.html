@@ -5,97 +5,17 @@
     <meta charset="utf-8">
     <title>Navigation page</title>
     <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../style.css">
     <script src="../node_modules/jquery/dist/jquery.min.js" charset="utf-8"></script>
     <script src="../node_modules/jquery-modal/jquery.modal.js" charset="utf-8"></script>
-    <style media="screen">
-    a {
-        text-decoration: none;
-        font-weight: bold;
-        color: #a9a9a9;
-    }
-    
-    a:hover {
-        color: #696969;
-        text-decoration: underline;
-    }
-    
-    a:visited {
-        color: #778899;
-    }
-    
-    body {
-        display: flex;
-        flex-flow: column;
-        ;
-        justify-content: space-around;
-        min-height: 100vh;
-        font-family: Arial;
-    }
-    
-    main {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    
-    header {
-        display: flex;
-        flex-flow: column;
-        /*padding-top: 1vh;*/
-        font-family: Verdana;
-    }
-    
-    footer {
-        min-height: 10vh;
-        height: 10%;
-        background-color: #DCDCDC;
-        position: relative;
-    }
-    
-    footer p {
-        text-align: center;
-        font-family: "Times New Roman", Georgia, Serif;
-        color: #696969;
-    }
-    
-    .title {
-        text-align: center;
-        padding-right: 60%;
-        border-bottom: 1px solid black;
-    }
-    
-    .navbar {
-        display: flex;
-        justify-content: flex-start;
-        min-height: 5vh;
-        height: 20%;
-    }
-    
-    .nav {
-        min-width: 10%;
-        min-height: 3%;
-        text-align: center;
-    }
-    
-    .cardrow {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-    }
-    
-    .card {
-        width: 20vh;
-        min-height: 15vh;
-        background-color: #afeeee;
-        margin: 2vh;
-        padding: 2vh;
-    }
-    
-    .card p {
-        margin: 2vh;
-        font-family: Georgia;
+    <style>
+    .modal {
+        min-height: 20vh;
+        min-width: 40vh;
+        margin: 5%;
+        background-color: #d3d3d3;
+        border: 2px solid;
+        border-radius: 25px;
     }
     </style>
 </head>
@@ -124,17 +44,20 @@
         </div>
     </header>
     <main>
-        <div class="modal">
-            <div class="preview">
-                <a href="ajax.html" id="manual-ajax">second example</a>
-            </div>
-        </div>
         <div id="ex1" style="display:none;">
             <p>Thanks for clicking. That felt good. <a href="#" rel="modal:close">Close</a> or press ESC</p>
         </div>
         <!-- Link to open the modal -->
-        <p><a href="#ex1" rel="modal:open">Open Modal</a><a href="#close" rel="modal:close">Close window</a></p>
-        
+        <div class="modal">
+            <p>点击OpenModal按钮打开modal框</p>
+            <p><a href="#ex1" rel="modal:open">Open Modal</a></p>
+            <p>点击CloseWindow按钮打开modal框</p>
+            <p><a href="#close" rel="modal:close">Close window</a></p>
+        </div>
+        <div class="modal">
+            <p>点击Model AJAX按钮加载AJAX的modal框</p>
+            <p><a href="ajax.html" id="manual-ajax">Modal AJAX</a></p>
+        </div>
     </main>
     <footer>
         <p>All rights do not reserved.</p>

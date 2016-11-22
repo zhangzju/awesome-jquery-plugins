@@ -4,27 +4,66 @@
 <head>
     <meta charset="utf-8">
     <title>Navigation page</title>
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-flex.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css" media="screen" title="no title" charset="utf-8">
+    <style media="screen">
+      body {
+        display: flex;
+        flex-flow: column;;
+        justify-content: space-around;
+        min-height: 100vh;
+        font-family: Arial;
+      }
+
+      main{
+        flex: 1;
+      }
+
+      header {
+        display: flex;
+        flex-flow: column;
+        padding-top: 2%;
+      }
+
+      footer {
+        min-height: 10vh;
+        height: 10%;
+        background-color: #666666;
+      }
+
+      .title {
+        text-align: center;
+        padding-right: 60%;
+        border-bottom: 1px solid black;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: flex-start;
+        min-height: 5vh;
+        height:20%;
+      }
+
+      .nav {
+        min-width: 10%;
+        min-height: 3%;
+        text-align: center;
+
+      }
+    </style>
 </head>
 
 <body>
-    <header style="margin:10vh">
-        <div class="container">
-            <ul class="nav nav-pills">
-                <li class="nav-item">
-                    <a href="#" class="nav-link active">Active</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Another link</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link disabled">Disabled</a>
-                </li>
-            </ul>
-        </div>
+    <header>
+      <div class="title">
+        <h1>Jquery Plugins</h1>
+      </div>
+      <div class="navbar">
+        <div class="nav"></div>
+        <div class="nav"></div>
+        <div class="nav"></div>
+        <div class="nav"></div>
+        <div class="nav"></div>
+      </div>
     </header>
     <main>
     </main>

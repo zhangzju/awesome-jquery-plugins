@@ -6,6 +6,21 @@
     <title>Navigation page</title>
     <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css" media="screen" title="no title" charset="utf-8">
     <style media="screen">
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #a9a9a9;
+      }
+
+      a:hover{
+        color:#696969;
+        text-decoration: underline;
+      }
+
+      a:visited {
+        color: #778899;
+      }
+
       body {
         display: flex;
         flex-flow: column;;
@@ -27,7 +42,14 @@
       footer {
         min-height: 10vh;
         height: 10%;
-        background-color: #666666;
+        background-color: #DCDCDC;
+        position: relative;
+      }
+
+      footer p{
+        text-align: center;
+        font-weight: bolder;
+        color: #696969;
       }
 
       .title {
@@ -47,8 +69,8 @@
         min-width: 10%;
         min-height: 3%;
         text-align: center;
-
       }
+
     </style>
 </head>
 
@@ -58,16 +80,18 @@
         <h1>Jquery Plugins</h1>
       </div>
       <div class="navbar">
-        <div class="nav"></div>
-        <div class="nav"></div>
-        <div class="nav"></div>
-        <div class="nav"></div>
-        <div class="nav"></div>
+        <div class="nav"><a href=""></a></div>
+        <div class="nav"><p><a href="">首页</a></p></div>
+        <div class="nav"><p><a href="">首页</a></p></div>
+        <div class="nav"><p><a href="">首页</a></p></div>
+        <div class="nav"><p><a href="">首页</a></p></div>
       </div>
     </header>
     <main>
     </main>
     <footer>
+      <p>All rights do not reserved.</p>
+      <p>Designed by <a href="http://zhangzju.github.io">zhangzju</a>.</p>
     </footer>
 </body>
 

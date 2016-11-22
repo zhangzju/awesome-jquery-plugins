@@ -5,73 +5,7 @@
     <meta charset="utf-8">
     <title>Navigation page</title>
     <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css" media="screen" title="no title" charset="utf-8">
-    <style media="screen">
-      a {
-        text-decoration: none;
-        font-weight: bold;
-        color: #a9a9a9;
-      }
-
-      a:hover{
-        color:#696969;
-        text-decoration: underline;
-      }
-
-      a:visited {
-        color: #778899;
-      }
-
-      body {
-        display: flex;
-        flex-flow: column;;
-        justify-content: space-around;
-        min-height: 100vh;
-        font-family: Arial;
-      }
-
-      main{
-        flex: 1;
-      }
-
-      header {
-        display: flex;
-        flex-flow: column;
-        padding-top: 2%;
-      }
-
-      footer {
-        min-height: 10vh;
-        height: 10%;
-        background-color: #DCDCDC;
-        position: relative;
-      }
-
-      footer p{
-        text-align: center;
-        font-weight: bolder;
-        color: #696969;
-      }
-
-      .title {
-        text-align: center;
-        padding-right: 60%;
-        border-bottom: 1px solid black;
-      }
-
-      .navbar {
-        display: flex;
-        justify-content: flex-start;
-        min-height: 5vh;
-        height:20%;
-      }
-
-      .nav {
-        min-width: 10%;
-        min-height: 3%;
-        text-align: center;
-      }
-
-    </style>
+    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
 </head>
 
 <body>
@@ -82,12 +16,30 @@
       <div class="navbar">
         <div class="nav"><a href=""></a></div>
         <div class="nav"><p><a href="">首页</a></p></div>
-        <div class="nav"><p><a href="">首页</a></p></div>
-        <div class="nav"><p><a href="">首页</a></p></div>
-        <div class="nav"><p><a href="">首页</a></p></div>
+        <div class="nav"><p><a href="">列表</a></p></div>
+        <div class="nav"><p><a href="">仓库</a></p></div>
+        <div class="nav"><p><a href="">帮助</a></p></div>
       </div>
     </header>
     <main>
+      <div class="cardrow">
+        <div class="card">
+          <p><a href="modal/">jquery modal</a></p>
+          <p>modal弹出框插件,适用于AJAX</p>
+        </div>
+        <div class="card">
+          <p><a href="modal/">jquery modal</a></p>
+          <p>modal弹出框插件,适用于AJAX</p>
+        </div>
+        <div class="card">
+          <p><a href="modal/">jquery modal</a></p>
+          <p>modal弹出框插件,适用于AJAX</p>
+        </div>
+        <div class="card">
+          <p><a href="modal/">jquery modal</a></p>
+          <p>modal弹出框插件,适用于AJAX</p>
+        </div>
+      </div>
     </main>
     <footer>
       <p>All rights do not reserved.</p>

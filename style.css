@@ -1,0 +1,88 @@
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #a9a9a9;
+}
+
+a:hover{
+  color:#696969;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #778899;
+}
+
+body {
+  display: flex;
+  flex-flow: column;;
+  justify-content: space-around;
+  min-height: 100vh;
+  font-family: Arial;
+}
+
+main{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+header {
+  display: flex;
+  flex-flow: column;
+  /*padding-top: 1vh;*/
+  font-family: Verdana;
+}
+
+footer {
+  min-height: 10vh;
+  height: 10%;
+  background-color: #DCDCDC;
+  position: relative;
+}
+
+footer p{
+  text-align: center;
+  font-family: "Times New Roman",Georgia,Serif;
+  color: #696969;
+}
+
+.title {
+  text-align: center;
+  padding-right: 60%;
+  border-bottom: 1px solid black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  min-height: 5vh;
+  height:20%;
+}
+
+.nav {
+  min-width: 10%;
+  min-height: 3%;
+  text-align: center;
+}
+
+.cardrow {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card {
+  width: 20vh;
+  min-height: 15vh;
+  background-color: #afeeee;
+  margin: 2vh;
+  padding: 2vh;
+}
+
+.card p {
+  margin: 2vh;
+  font-family: Georgia;
+}

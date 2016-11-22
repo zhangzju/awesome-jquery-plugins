@@ -1,19 +1,125 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title>jquery modal</title>
+    <title>Navigation page</title>
     <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css" media="screen" title="no title" charset="utf-8">
     <script src="../node_modules/jquery/dist/jquery.min.js" charset="utf-8"></script>
     <script src="../node_modules/jquery-modal/jquery.modal.js" charset="utf-8"></script>
-  </head>
-  <body>
-    <!-- Modal HTML embedded directly into document -->
-<div id="ex1" style="display:none;">
-  <p>Thanks for clicking.  That felt good.  <a href="#" rel="modal:close">Close</a> or press ESC</p>
-</div>
+    <style media="screen">
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #a9a9a9;
+      }
 
-<!-- Link to open the modal -->
-<p><a href="#ex1" rel="modal:open">Open Modal</a></p>
-  </body>
+      a:hover{
+        color:#696969;
+        text-decoration: underline;
+      }
+
+      a:visited {
+        color: #778899;
+      }
+
+      body {
+        display: flex;
+        flex-flow: column;;
+        justify-content: space-around;
+        min-height: 100vh;
+        font-family: Arial;
+      }
+
+      main{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+
+      header {
+        display: flex;
+        flex-flow: column;
+        /*padding-top: 1vh;*/
+        font-family: Verdana;
+      }
+
+      footer {
+        min-height: 10vh;
+        height: 10%;
+        background-color: #DCDCDC;
+        position: relative;
+      }
+
+      footer p{
+        text-align: center;
+        font-family: "Times New Roman",Georgia,Serif;
+        color: #696969;
+      }
+
+      .title {
+        text-align: center;
+        padding-right: 60%;
+        border-bottom: 1px solid black;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: flex-start;
+        min-height: 5vh;
+        height:20%;
+      }
+
+      .nav {
+        min-width: 10%;
+        min-height: 3%;
+        text-align: center;
+      }
+
+      .cardrow {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+      .card {
+        width: 20vh;
+        min-height: 15vh;
+        background-color: #afeeee;
+        margin: 2vh;
+        padding: 2vh;
+      }
+
+      .card p {
+        margin: 2vh;
+        font-family: Georgia;
+      }
+    </style>
+</head>
+
+<body>
+    <header>
+      <div class="title">
+        <h1>Jquery Plugins</h1>
+      </div>
+      <div class="navbar">
+        <div class="nav"><a href=""></a></div>
+        <div class="nav"><p><a href="">首页</a></p></div>
+        <div class="nav"><p><a href="">列表</a></p></div>
+        <div class="nav"><p><a href="">仓库</a></p></div>
+        <div class="nav"><p><a href="">帮助</a></p></div>
+      </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+      <p>All rights do not reserved.</p>
+      <p>Designed by <a href="http://zhangzju.github.io">zhangzju</a>.</p>
+    </footer>
+</body>
+
 </html>
